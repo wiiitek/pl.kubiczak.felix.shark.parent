@@ -1,0 +1,10 @@
+
+All plugins with a version specified are using the latest versions.
+
+All plugins have a version specified.
+
+Project defines minimum Maven version as: 3.0
+Plugins require minimum Maven version of: 3.0
+
+No plugins require a newer version of Maven than specified by the pom.
+
