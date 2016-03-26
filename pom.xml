@@ -34,12 +34,11 @@
 	</distributionManagement>
 
 	<properties>
-		<dir.felix>felix-framework</dir.felix>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<download.felix.mirror>http://ftp.ps.pl/pub/apache</download.felix.mirror>
+		<felix.dir>felix-framework</felix.dir>
+		<felix.mirror>http://ftp.ps.pl/pub/apache</felix.mirror>
 
 		<version.felix>5.4.0</version.felix>
 	</properties>
