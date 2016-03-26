@@ -45,13 +45,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- Felix -->
-			<dependency>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>org.apache.felix.framework</artifactId>
-				<version>${version.felix}</version>
-				<scope>provided</scope>
-			</dependency>
 			<!-- maven site skin -->
 			<dependency>
 				<groupId>org.apache.maven.skins</groupId>
