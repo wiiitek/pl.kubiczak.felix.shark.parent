@@ -2,7 +2,7 @@
 pl.kubiczak.felix.shark.parent
 ==============================
 
-This project manages dependencies and plugins versions for other projects with
+This project manages properties and plugins versions for other projects with
 
     <groupId>pl.kubiczak.felix.shark</groupId>
 
@@ -18,7 +18,7 @@ License
 [Attribution-NonCommercial 4.0 International][license]
 
 
-Dependencies versions
+Plugins versions
 ---------------------
 
 Plugins and dependencies versions are reported with every build in:
