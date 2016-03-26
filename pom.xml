@@ -9,7 +9,6 @@
 
 	<name>Shark: Parent</name>
 	<url>http://site.kubiczak.pl/${project.artifactId}</url>
-	<inceptionYear>2016</inceptionYear>
 
 	<prerequisites>
 		<maven>3.0</maven>
