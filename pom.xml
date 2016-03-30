@@ -159,6 +159,7 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<executions>
 					<execution>
+						<id>copy-readme-file-to-site</id>
 						<phase>pre-site</phase>
 						<goals>
 							<goal>copy-resources</goal>
