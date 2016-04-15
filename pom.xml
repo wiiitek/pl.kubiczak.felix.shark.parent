@@ -143,6 +143,25 @@
 					<artifactId>maven-scr-plugin</artifactId>
 					<version>1.21.0</version>
 				</plugin>
+
+				<!-- unit tests -->
+				<!--
+					The gmavenplus plugin is used to compile Groovy code.
+					To learn more about this plugin, isit https://github.com/groovy/GMavenPlus/wiki
+				-->
+				<plugin>
+					<groupId>org.codehaus.gmavenplus</groupId>
+					<artifactId>gmavenplus-plugin</artifactId>
+					<version>1.5</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>compile</goal>
+								<goal>testCompile</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 
