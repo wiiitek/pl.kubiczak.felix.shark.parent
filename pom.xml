@@ -187,46 +187,11 @@
 
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>copy-readme-file-to-site</id>
-						<phase>pre-site</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/src/site/markdown</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${basedir}</directory>
-									<includes>
-										<include>README.md</include>
-									</includes>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>dependencies</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>display-dependency-updates</goal>
-						</goals>
-						<configuration>
-							<logOutput>false</logOutput>
-							<outputFile>${project.basedir}/src/main/resources/dependencies-report.txt</outputFile>
-						</configuration>
-					</execution>
-					<execution>
-						<id>plugins</id>
+						<id>check-plugins-versions</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>display-plugin-updates</goal>
@@ -244,6 +209,7 @@
 				<artifactId>sortpom-maven-plugin</artifactId>
 				<executions>
 					<execution>
+						<id>sort-pom-files</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>verify</goal>
@@ -254,6 +220,19 @@
 							<!-- indent with tabs -->
 							<nrOfIndentSpace>-1</nrOfIndentSpace>
 						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-descriptor-to-main-artifact</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>attach-descriptor</goal>
+						</goals>
 					</execution>
 				</executions>
 			</plugin>
