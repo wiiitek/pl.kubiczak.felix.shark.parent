@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pl.kubiczak.felix.shark</groupId>
-	<artifactId>pl.kubiczak.felix.shark.parent</artifactId>
+	<artifactId>parent</artifactId>
 	<version>1.6-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>Shark: Parent</name>
-	<url>http://site.kubiczak.pl/${project.artifactId}</url>
+	<url>https://shark.kubiczak.pl/parent</url>
 
 	<prerequisites>
 		<maven>3.0.5</maven>
 	</prerequisites>
 
 	<scm>
-		<connection>scm:git:https://github.com/wiiitek/${project.artifactId}.git</connection>
-		<developerConnection>scm:git:git@github.com:wiiitek/${project.artifactId}.git</developerConnection>
-		<tag>HEAD</tag>
-		<url>https://github.com/wiiitek/${project.artifactId}</url>
+		<connection>scm:git:https://github.com/wiiitek/pl.kubiczak.felix.shark.parent.git</connection>
+		<developerConnection>scm:git:git@github.com:wiiitek/pl.kubiczak.felix.shark.parent.git</developerConnection>
+		<url>https://github.com/wiiitek/pl.kubiczak.felix.shark.parent/tree/${project.scm.tag}</url>
 	</scm>
 
 	<distributionManagement>
@@ -27,8 +28,8 @@
 			<url>ftp://maven.kubiczak.pl</url>
 		</repository>
 		<site>
-			<id>ftp.site.kubiczak.pl</id>
-			<url>ftp://site.kubiczak.pl/${project.artifactId}</url>
+			<id>ftp.shark.kubiczak.pl</id>
+			<url>ftp://shark.kubiczak.pl/parent</url>
 		</site>
 	</distributionManagement>
 
@@ -41,6 +42,13 @@
 
 		<version.felix>5.4.0</version.felix>
 	</properties>
+
+    <repositories>
+        <repository>
+            <id>maven.kubiczak.pl</id>
+            <url>http://maven.kubiczak.pl</url>
+        </repository>
+    </repositories>
 
 	<build>
 		<extensions>
@@ -91,6 +99,10 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-site-plugin</artifactId>
 					<version>3.5</version>
+					<configuration>
+						<stagingRepositoryId>ftp.test.kubiczak.pl</stagingRepositoryId>
+						<stagingSiteURL>${project.distributionManagement.site.url}</stagingSiteURL>
+					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
