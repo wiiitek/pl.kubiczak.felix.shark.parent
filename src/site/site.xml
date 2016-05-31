@@ -21,8 +21,18 @@
 				#poweredBy iframe {
 					width: 80px ! important;
 				}
+				#banner div.pull-left {
+					margin-left: 100px;
+				}
+				#breadcrumbs ul.breadcrumb {
+					padding-left: 100px;
+				}
 			</style>]]>
 		</head>
+		<menu name="Modules" inherit="top">
+			<item name="Shark: Parent" href="../pl.kubiczak.felix.shark.parent" />
+			<item name="Shark: Dependencies" href="../pl.kubiczak.felix.shark.dependencies" />
+		</menu>
 		<menu ref="reports" inherit="top"/>
 	</body>
 
@@ -32,7 +42,7 @@
 
 			<gitHub>
 				<projectId>wiiitek/${project.artifactId}</projectId>
-				<ribbonOrientation>right</ribbonOrientation>
+				<ribbonOrientation>left</ribbonOrientation>
 				<ribbonColor>gray</ribbonColor>
 			</gitHub>
 			<facebookLike/>
