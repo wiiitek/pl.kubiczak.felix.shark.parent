@@ -29,9 +29,12 @@
 				}
 			</style>]]>
 		</head>
-		<menu name="Modules" inherit="top">
-			<item name="Shark: Parent" href="../pl.kubiczak.felix.shark.parent" />
-			<item name="Shark: Dependencies" href="../pl.kubiczak.felix.shark.dependencies" />
+		<menu name="Shark Modules" inherit="top">
+			<item name="Shark: Parent" href="../parent/" />
+			<item name="Shark: Dependencies" href="../dependencies/" />
+			<item name="Shark: Felix" href="../felix/" />
+			<item name="Shark: Logging" href="../logging/" />
+			<item name="Shark: Samples" href="../samples/" />
 		</menu>
 		<menu ref="reports" inherit="top"/>
 	</body>
@@ -41,7 +44,7 @@
 			<sideBarEnabled>true</sideBarEnabled>
 
 			<gitHub>
-				<projectId>wiiitek/${project.artifactId}</projectId>
+				<projectId>wiiitek/pl.kubiczak.felix.shark.${project.artifactId}</projectId>
 				<ribbonOrientation>left</ribbonOrientation>
 				<ribbonColor>gray</ribbonColor>
 			</gitHub>
