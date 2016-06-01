@@ -12,6 +12,15 @@
 	<name>Shark: Parent</name>
 	<url>https://shark.kubiczak.pl/parent</url>
 
+	<licenses>
+		<license>
+			<name>Creative Commons Attribution-NonCommercial 4.0 International Public License</name>
+			<url>http://creativecommons.org/licenses/by-nc/4.0/</url>
+			<distribution>repo</distribution>
+			<comments>For commercial usage license please contact Shark author</comments>
+		</license>
+	</licenses>
+
 	<prerequisites>
 		<maven>3.0.5</maven>
 	</prerequisites>
@@ -43,12 +52,12 @@
 		<version.felix>5.4.0</version.felix>
 	</properties>
 
-    <repositories>
-        <repository>
-            <id>maven.kubiczak.pl</id>
-            <url>http://maven.kubiczak.pl</url>
-        </repository>
-    </repositories>
+	<repositories>
+		<repository>
+			<id>maven.kubiczak.pl</id>
+			<url>http://maven.kubiczak.pl</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<extensions>
