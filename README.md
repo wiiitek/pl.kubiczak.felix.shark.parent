@@ -9,9 +9,9 @@ This project manages properties and plugins versions for other projects with
 
     <groupId>pl.kubiczak.felix.shark</groupId>
 
-Project site available at [http://site.kubiczak.pl/][project-site]
+Project site available at [https://shark.kubiczak.pl/][project-site]
 
-Maven artifacts at [http://maven.kubiczak.pl/][custom-maven-repo]
+Maven artifacts at [http://maven.kubiczak.pl/pl/kubiczak/felix/shark/][custom-maven-repo]
 
 
 License
@@ -30,5 +30,5 @@ Plugins and dependencies versions are reported with every build in:
 * `src/main/resources/plugins-report.txt`
 
 [license]: http://creativecommons.org/licenses/by-nc/4.0/
-[project-site]: http://site.kubiczak.pl/
-[custom-maven-repo]: http://maven.kubiczak.pl/
+[project-site]: https://shark.kubiczak.pl/
+[custom-maven-repo]: http://maven.kubiczak.pl/pl/kubiczak/felix/shark/
