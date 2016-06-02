@@ -6,7 +6,7 @@
 	<!-- http://maven.apache.org/xsd/decoration-1.7.0.xsd -->
 
 	<poweredBy>
-		<logo name="${project.name}" href="http://shark.kubiczak.pl/" img="/images/logo.png"/>
+		<logo name="${project.name}" href="http://shark.kubiczak.pl/" img="images/logo.png"/>
 	</poweredBy>
 
 	<skin>
@@ -30,7 +30,7 @@
 			</style>]]>
 		</head>
 		<menu name="Shark Modules" inherit="top">
-			<item name="Shark: Parent" href="../parent/" />
+			<item name="Shark: Parent" href="./" />
 			<item name="Shark: Dependencies" href="../dependencies/" />
 			<item name="Shark: Felix" href="../felix/" />
 			<item name="Shark: Logging" href="../logging/" />
