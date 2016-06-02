@@ -2,3 +2,6 @@ language: java
 sudo: false
 jdk:
   - oraclejdk8
+
+install: ./src/main/resources/travis-install.sh
+script:  ./src/main/resources/travis-script.sh
