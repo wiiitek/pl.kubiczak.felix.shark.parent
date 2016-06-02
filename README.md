@@ -2,6 +2,9 @@
 pl.kubiczak.felix.shark.parent
 ==============================
 
+[![Build Status](https://travis-ci.org/wiiitek/pl.kubiczak.felix.shark.parent.svg?branch=master)](https://travis-ci.org/wiiitek/pl.kubiczak.felix.shark.parent)
+
+
 This project manages properties and plugins versions for other projects with
 
     <groupId>pl.kubiczak.felix.shark</groupId>
@@ -9,6 +12,7 @@ This project manages properties and plugins versions for other projects with
 Project site available at [http://site.kubiczak.pl/][project-site]
 
 Maven artifacts at [http://maven.kubiczak.pl/][custom-maven-repo]
+
 
 License
 -------
@@ -23,11 +27,8 @@ Plugins versions
 
 Plugins and dependencies versions are reported with every build in:
 
-* `src/main/resources/dependencies-report.txt`
 * `src/main/resources/plugins-report.txt`
 
-
-[maven-release-plugin]: https://maven.apache.org/maven-release/maven-release-plugin/
 [license]: http://creativecommons.org/licenses/by-nc/4.0/
 [project-site]: http://site.kubiczak.pl/
 [custom-maven-repo]: http://maven.kubiczak.pl/
