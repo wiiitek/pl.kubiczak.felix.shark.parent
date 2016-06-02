@@ -1,0 +1,13 @@
+/dependencies
+/felix
+/logging
+/samples
+
+/target
+
+/.idea
+*.iml
+
+.project
+.classpath
+.settings
