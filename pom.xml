@@ -18,8 +18,9 @@
 		</license>
 	</licenses>
 
+	<!-- maven prerequisites for plugins versions check by versions-maven-plugin -->
 	<prerequisites>
-		<maven>3.0.5</maven>
+		<maven>${version.required.maven}</maven>
 	</prerequisites>
 
 	<modules>
@@ -55,6 +56,7 @@
 		<felix.dir>felix-framework</felix.dir>
 		<felix.mirror>http://ftp.ps.pl/pub/apache</felix.mirror>
 
+		<version.required.maven>3.0.5</version.required.maven>
 		<version.felix>5.4.0</version.felix>
 	</properties>
 
@@ -163,15 +165,35 @@
 				</plugin>
 				<!-- end of release plugins -->
 
-				<plugin>
-					<groupId>org.apache.felix</groupId>
-					<artifactId>maven-bundle-plugin</artifactId>
-					<version>3.0.1</version>
-				</plugin>
+				<!-- source quality plugins -->
 				<plugin>
 					<groupId>com.github.ekryd.sortpom</groupId>
 					<artifactId>sortpom-maven-plugin</artifactId>
 					<version>2.5.0</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-enforcer-plugin</artifactId>
+					<version>1.4.1</version>
+					<dependencies>
+						<dependency>
+							<groupId>org.codehaus.mojo</groupId>
+							<artifactId>extra-enforcer-rules</artifactId>
+							<version>1.0-beta-4</version>
+						</dependency>
+						<dependency>
+							<groupId>com.github.ferstl</groupId>
+							<artifactId>pedantic-pom-enforcers</artifactId>
+							<version>1.2.0</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+				<!-- end of source quality plugins -->
+
+				<plugin>
+					<groupId>org.apache.felix</groupId>
+					<artifactId>maven-bundle-plugin</artifactId>
+					<version>3.0.1</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -239,8 +261,8 @@
 				<artifactId>sortpom-maven-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>sort-pom-files</id>
-						<phase>verify</phase>
+						<id>sort-pom</id>
+						<phase>validate</phase>
 						<goals>
 							<goal>verify</goal>
 						</goals>
@@ -252,6 +274,34 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>enforce-code-quality</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<!-- default rules -->
+								<dependencyConvergence/>
+								<requireMavenVersion>
+									<version>${version.required.maven}</version>
+								</requireMavenVersion>
+								<!-- pedantic-pom-enforcers rules -->
+								<moduleOrder implementation="com.github.ferstl.maven.pomenforcers.PedanticModuleOrderEnforcer"/>
+								<dependencConfiguration implementation="com.github.ferstl.maven.pomenforcers.PedanticDependencyConfigurationEnforcer"/>
+								<pluginConfiguration implementation="com.github.ferstl.maven.pomenforcers.PedanticPluginConfigurationEnforcer"/>
+							</rules>
+							<failFast>false</failFast>
+						</configuration>
+					</execution>
+				</executions>
+				<inherited>true</inherited>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
