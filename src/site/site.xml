@@ -1,56 +1,53 @@
-<project xmlns="http://maven.apache.org/DECORATION/1.7.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="
-				http://maven.apache.org/DECORATION/1.7.0
-				decoration-1.7.0.xsd">
-	<!-- http://maven.apache.org/xsd/decoration-1.7.0.xsd -->
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/DECORATION/1.7.0"
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 decoration-1.7.0.xsd">
+            <!-- http://maven.apache.org/xsd/decoration-1.7.0.xsd -->
 
-	<poweredBy>
-		<logo name="${project.name}" href="http://shark.kubiczak.pl/" img="images/logo.png"/>
-	</poweredBy>
+    <poweredBy>
+        <logo name="${project.name}" href="http://shark.kubiczak.pl/" img="images/logo.png"/>
+    </poweredBy>
 
-	<skin>
-		<groupId>org.apache.maven.skins</groupId>
-		<artifactId>maven-fluido-skin</artifactId>
-		<version>1.5</version>
-	</skin>
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.5</version>
+    </skin>
 
-	<body>
-		<head><![CDATA[
-			<style>
-				#poweredBy iframe {
-					width: 80px ! important;
-				}
-				#banner div.pull-left {
-					margin-left: 100px;
-				}
-				#breadcrumbs ul.breadcrumb {
-					padding-left: 100px;
-				}
-			</style>]]>
-		</head>
-		<menu name="Shark Modules" inherit="top">
-			<item name="Shark: Parent" href="./" />
-			<item name="Shark: Dependencies" href="../dependencies/" />
-			<item name="Shark: Felix" href="../felix/" />
-			<item name="Shark: Logging" href="../logging/" />
-			<item name="Shark: Samples" href="../samples/" />
-		</menu>
-		<menu ref="reports" inherit="top"/>
-	</body>
+    <body>
+        <head><![CDATA[
+            <style>
+                #poweredBy iframe {
+                    width: 80px ! important;
+                }
+                #banner div.pull-left {
+                    margin-left: 100px;
+                }
+                #breadcrumbs ul.breadcrumb {
+                    padding-left: 100px;
+                }
+            </style>]]>
+        </head>
+        <menu name="Shark Modules" inherit="top">
+            <item name="Shark: Parent" href="./"/>
+            <item name="Shark: Dependencies" href="../dependencies/"/>
+            <item name="Shark: Felix" href="../felix/"/>
+            <item name="Shark: Logging" href="../logging/"/>
+            <item name="Shark: Samples" href="../samples/"/>
+        </menu>
+        <menu ref="reports" inherit="top"/>
+    </body>
 
-	<custom>
-		<fluidoSkin>
-			<sideBarEnabled>true</sideBarEnabled>
+    <custom>
+        <fluidoSkin>
+            <sideBarEnabled>true</sideBarEnabled>
 
-			<gitHub>
-				<projectId>wiiitek/pl.kubiczak.felix.shark.${project.artifactId}</projectId>
-				<ribbonOrientation>left</ribbonOrientation>
-				<ribbonColor>gray</ribbonColor>
-			</gitHub>
-			<facebookLike/>
+            <gitHub>
+                <projectId>wiiitek/pl.kubiczak.felix.shark.${project.artifactId}</projectId>
+                <ribbonOrientation>left</ribbonOrientation>
+                <ribbonColor>gray</ribbonColor>
+            </gitHub>
+            <facebookLike/>
 
-		</fluidoSkin>
-	</custom>
-
+        </fluidoSkin>
+    </custom>
 </project>
