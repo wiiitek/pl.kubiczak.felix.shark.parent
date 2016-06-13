@@ -1,13 +1,17 @@
+# maven submodules
 /dependencies
 /felix
 /logging
 /samples
 
+# maven output
 /target
 
+# IntelliJ files
 /.idea
-*.iml
+/*.iml
 
-.project
-.classpath
-.settings
+# Eclipse files
+/.project
+/.classpath
+/.settings
