@@ -271,7 +271,7 @@
             <configuration>
               <keepBlankLines>true</keepBlankLines>
               <createBackupFile>false</createBackupFile>
-              <!-- indent with tabs -->
+              <expandEmptyElements>false</expandEmptyElements>
               <nrOfIndentSpace>2</nrOfIndentSpace>
             </configuration>
           </execution>
@@ -294,6 +294,10 @@
                 <requireMavenVersion>
                   <version>${version.required.maven}</version>
                 </requireMavenVersion>
+                <requireJavaVersion>
+                  <!-- JAVA 1.8.0 is required by sortpom-maven-plugin:2.5.0 -->
+                  <version>1.8.0</version>
+                </requireJavaVersion>
                 <!-- pedantic-pom-enforcers rules -->
                 <moduleOrder
                         implementation="com.github.ferstl.maven.pomenforcers.PedanticModuleOrderEnforcer"/>
