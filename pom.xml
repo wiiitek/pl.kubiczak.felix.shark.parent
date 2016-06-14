@@ -56,6 +56,10 @@
       <id>ftp.maven.kubiczak.pl</id>
       <url>ftp://maven.kubiczak.pl</url>
     </repository>
+    <snapshotRepository>
+      <id>ftp.staging.shark.kubiczak.pl</id>
+      <url>ftp://staging.shark.kubiczak.pl</url>
+    </snapshotRepository>
     <site>
       <id>ftp.shark.kubiczak.pl</id>
       <url>ftp://shark.kubiczak.pl</url>
