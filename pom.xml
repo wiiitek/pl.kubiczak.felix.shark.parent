@@ -135,7 +135,7 @@
           <version>3.5</version>
           <configuration>
             <stagingRepositoryId>ftp.staging.shark.kubiczak.pl</stagingRepositoryId>
-            <stagingSiteURL>${project.distributionManagement.site.url}</stagingSiteURL>
+            <stagingSiteURL>ftp://staging.shark.kubiczak.pl</stagingSiteURL>
           </configuration>
         </plugin>
         <plugin>
