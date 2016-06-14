@@ -13,6 +13,19 @@ Project site available at [https://shark.kubiczak.pl/][project-site]
 
 Maven artifacts at [http://maven.kubiczak.pl/pl/kubiczak/felix/shark/][custom-maven-repo]
 
+Release instructions
+--------------------
+
+Submodules for this project are within separate GIT repositories.
+Therefore during release we need to use `-N -Darguments=-N` arguments
+as described at [Maven Release Plugin FAQ][maven-release-plugin-faq]:
+
+    mvn -N -Darguments=-N release:prepare -P release
+    mvn -N -Darguments=-N release:perform -P release
+
+There are also some properties for [non-interactive][maven-release-plugin-non-interative] release:
+
+    -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
 
 License
 -------
@@ -32,3 +45,5 @@ Plugins and dependencies versions are reported with every build in:
 [license]: http://creativecommons.org/licenses/by-nc/4.0/
 [project-site]: https://shark.kubiczak.pl/
 [custom-maven-repo]: http://maven.kubiczak.pl/pl/kubiczak/felix/shark/
+[maven-release-plugin-faq]: http://maven.apache.org/maven-release/maven-release-plugin/faq.html#nonrecursive
+[maven-release-plugin-non-interative]: http://maven.apache.org/maven-release/maven-release-plugin/examples/non-interactive-release.html
