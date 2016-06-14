@@ -24,6 +24,14 @@
     </license>
   </licenses>
 
+  <developers>
+    <developer>
+      <name>Jakub Kubiczak</name>
+      <email>kubiczak.jakub@gmail.com</email>
+      <url>https://www.kubiczak.pl</url>
+    </developer>
+  </developers>
+
   <!-- maven prerequisites for plugins versions check by versions-maven-plugin -->
   <prerequisites>
     <maven>${version.required.maven}</maven>
