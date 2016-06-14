@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>pl.kubiczak.felix.shark</groupId>
   <artifactId>parent</artifactId>
-  <version>1.7-SNAPSHOT</version>
+  <version>1.7</version>
   <packaging>pom</packaging>
 
   <name>Shark: Parent</name>
@@ -47,7 +45,7 @@
   <scm>
     <connection>scm:git:https://github.com/wiiitek/pl.kubiczak.felix.shark.parent.git</connection>
     <developerConnection>scm:git:git@github.com:wiiitek/pl.kubiczak.felix.shark.parent.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>1.7</tag>
     <url>https://github.com/wiiitek/pl.kubiczak.felix.shark.parent/tree/${project.scm.tag}</url>
   </scm>
 
@@ -306,7 +304,7 @@
             <configuration>
               <rules>
                 <!-- default rules -->
-                <dependencyConvergence/>
+                <dependencyConvergence />
                 <requireMavenVersion>
                   <version>${version.required.maven}</version>
                 </requireMavenVersion>
@@ -315,14 +313,11 @@
                   <version>1.8.0</version>
                 </requireJavaVersion>
                 <!-- Mojo extra-enforcer-rules -->
-                <banCircularDependencies/>
+                <banCircularDependencies />
                 <!-- pedantic-pom-enforcers rules -->
-                <moduleOrder
-                        implementation="com.github.ferstl.maven.pomenforcers.PedanticModuleOrderEnforcer"/>
-                <dependencConfiguration
-                        implementation="com.github.ferstl.maven.pomenforcers.PedanticDependencyConfigurationEnforcer"/>
-                <pluginConfiguration
-                        implementation="com.github.ferstl.maven.pomenforcers.PedanticPluginConfigurationEnforcer"/>
+                <moduleOrder implementation="com.github.ferstl.maven.pomenforcers.PedanticModuleOrderEnforcer" />
+                <dependencConfiguration implementation="com.github.ferstl.maven.pomenforcers.PedanticDependencyConfigurationEnforcer" />
+                <pluginConfiguration implementation="com.github.ferstl.maven.pomenforcers.PedanticPluginConfigurationEnforcer" />
               </rules>
             </configuration>
           </execution>
