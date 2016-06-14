@@ -10,6 +10,10 @@
   <packaging>pom</packaging>
 
   <name>Shark: Parent</name>
+  <description>
+    Parent maven module for all other Shark artifacts.
+    Contains plugins configuration and default executions.
+  </description>
   <url>https://shark.kubiczak.pl</url>
 
   <licenses>
