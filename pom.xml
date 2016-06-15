@@ -106,6 +106,7 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.5.1</version>
+          <!-- this configuration is for default execution -->
           <configuration>
             <source>1.7</source>
             <target>1.7</target>
@@ -135,6 +136,7 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.5</version>
+          <!-- this configuration is for executions performed from command line (on demand) -->
           <configuration>
             <stagingRepositoryId>ftp.staging.shark.kubiczak.pl</stagingRepositoryId>
             <stagingSiteURL>ftp://staging.shark.kubiczak.pl</stagingSiteURL>
@@ -170,6 +172,7 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
           <version>2.5.2</version>
+          <!-- this configuration is for executions performed from command line (on demand) -->
           <configuration>
             <tagNameFormat>@{project.version}</tagNameFormat>
           </configuration>
@@ -239,8 +242,8 @@
 
         <!-- unit tests -->
         <!--
-            The gmavenplus plugin is used to compile Groovy code.
-            To learn more about this plugin, isit https://github.com/groovy/GMavenPlus/wiki
+            This plugin is used to compile Groovy code.
+            To learn more about it visit https://github.com/groovy/GMavenPlus/wiki
         -->
         <plugin>
           <groupId>org.codehaus.gmavenplus</groupId>
@@ -296,12 +299,13 @@
           </execution>
         </executions>
       </plugin>
+      <!-- This plugin validates maven configuration and environment -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <executions>
           <execution>
-            <id>enforce-code-quality</id>
+            <id>check-modules-and-environment</id>
             <phase>validate</phase>
             <goals>
               <goal>enforce</goal>
