@@ -3,6 +3,7 @@
 /felix
 /logging
 /samples
+/smsshark
 
 # maven output
 /target
