@@ -23,7 +23,8 @@ as described at [Maven Release Plugin FAQ][maven-release-plugin-faq]:
     mvn -N -Darguments=-N release:prepare -P release
     mvn -N -Darguments=-N release:perform -P release
 
-There are also some properties for [non-interactive][maven-release-plugin-non-interative] release:
+There are also some properties for [non-interactive][maven-release-plugin-non-interative] release
+(for `mvn:prepare` goal):
 
     -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
 
