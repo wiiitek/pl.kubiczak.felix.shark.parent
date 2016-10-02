@@ -26,7 +26,7 @@ as described at [Maven Release Plugin FAQ][maven-release-plugin-faq]:
 There are also some properties for [non-interactive][maven-release-plugin-non-interative] release
 (for `mvn:prepare` goal):
 
-    -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
+    -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT -P release
 
 License
 -------
