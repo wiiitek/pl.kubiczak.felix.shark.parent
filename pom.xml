@@ -70,7 +70,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <felix.dir>felix-framework</felix.dir>
-    <felix.mirror>http://ftp.ps.pl/pub/apache</felix.mirror>
+    <felix.mirror>https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.main.distribution</felix.mirror>
 
     <version.required.maven>3.0.5</version.required.maven>
     <version.felix>5.4.0</version.felix>
