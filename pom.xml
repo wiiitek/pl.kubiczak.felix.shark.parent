@@ -87,12 +87,14 @@
   </repositories>
 
   <build>
+
     <extensions>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-ftp</artifactId>
       </extension>
     </extensions>
+    <finalName>${project.groupId}-${project.artifactId}-${project.version}</finalName>
 
     <pluginManagement>
       <plugins>
