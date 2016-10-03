@@ -16,17 +16,24 @@ Maven artifacts at [http://maven.kubiczak.pl/pl/kubiczak/felix/shark/][custom-ma
 Release instructions
 --------------------
 
-Submodules for this project are within separate GIT repositories.
-Therefore during release we need to use `-N -Darguments=-N` arguments
+Submodules of parent project are within separate GIT repositories.
+Therefore during release we need to use `-N -Darguments=-N` (non-recursive) arguments
 as described at [Maven Release Plugin FAQ][maven-release-plugin-faq]:
 
-    mvn -N -Darguments=-N release:prepare -P release
-    mvn -N -Darguments=-N release:perform -P release
+    mvn -N -Darguments=-N
 
-There are also some properties for [non-interactive][maven-release-plugin-non-interative] release
-(for `mvn:prepare` goal):
+Please remember about using release profile:
 
-    -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT -P release
+    -P release
+
+In order to perform [non-interactive][maven-release-plugin-non-interative] release use:
+
+    -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
+
+To sum it up, release may be performed with following commands:
+
+    mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT -P release
+    mvn release:perform -B -P release
 
 License
 -------
