@@ -26,11 +26,11 @@ for release plugin we need to use:
 
 Please remember about using release profile:
 
-    -P release
+    -Prelease
 
 If you want to sign released artifacts use `sign` profile and provide gpg key id:
 
-    -P sign -Dgpg.keyname=9A105524
+    -Psign -Dgpg.keyname=9A105524
 
 In order to perform [non-interactive][maven-release-plugin-non-interative] release use:
 
@@ -38,8 +38,8 @@ In order to perform [non-interactive][maven-release-plugin-non-interative] relea
 
 To sum it up, release may be performed with following commands:
 
-    mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT  -Dgpg.keyname=9A105524 -Psign,release
-    mvn release:perform -B -P release
+    mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT 
+    mvn release:perform -Darguments="-Dgpg.keyname=9A105524" -Psign,release
 
 License
 -------
