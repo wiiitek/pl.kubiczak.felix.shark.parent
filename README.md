@@ -16,9 +16,11 @@ Maven artifacts at [http://maven.kubiczak.pl/pl/kubiczak/felix/shark/][custom-ma
 Release instructions
 --------------------
 
-Submodules of parent project are within separate GIT repositories.
-Therefore during release we need to use `-N -Darguments=-N` (non-recursive) arguments
-as described at [Maven Release Plugin FAQ][maven-release-plugin-faq]:
+Submodules of this project are versioned in separate GIT repositories.
+They are released independently.
+Therefore during release we need to use `-N` (non-recursive) flag.
+But as described in [Maven Release Plugin FAQ][maven-release-plugin-faq]
+for release plugin we need to use:
 
     mvn -N -Darguments=-N
 
@@ -46,7 +48,7 @@ License
 Plugins versions
 ---------------------
 
-Plugins and dependencies versions are reported with every build in:
+Plugins versions are reported with every build in:
 
 * `src/main/resources/plugins-report.txt`
 
