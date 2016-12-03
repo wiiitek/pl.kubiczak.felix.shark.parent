@@ -4,7 +4,7 @@
 
   <groupId>pl.kubiczak.felix.shark</groupId>
   <artifactId>parent</artifactId>
-  <version>1.14</version>
+  <version>1.15-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Shark: Parent</name>
@@ -45,7 +45,7 @@
   <scm>
     <connection>scm:git:https://github.com/wiiitek/pl.kubiczak.felix.shark.parent.git</connection>
     <developerConnection>scm:git:git@github.com:wiiitek/pl.kubiczak.felix.shark.parent.git</developerConnection>
-    <tag>1.14</tag>
+    <tag>HEAD</tag>
     <url>https://github.com/wiiitek/pl.kubiczak.felix.shark.parent/tree/${project.scm.tag}</url>
   </scm>
 
