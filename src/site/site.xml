@@ -14,6 +14,11 @@
 
   <body>
     <head><![CDATA[
+            <script type="text/javascript">
+                window.prettyPrint = function(){
+                    // prettyPrint support disabled
+                }
+            </script>
             <style>
                 #poweredBy iframe {
                     width: 80px ! important;
