@@ -68,7 +68,7 @@ In order to perform [non-interactive][maven-release-plugin-non-interative] relea
 License
 -------
 
-![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png "Attribution-NonCommercial 4.0 International")
+[![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png "Attribution-NonCommercial 4.0 International")][license]
 
 [Attribution-NonCommercial 4.0 International][license]
 
