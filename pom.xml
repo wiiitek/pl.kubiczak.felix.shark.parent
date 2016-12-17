@@ -419,6 +419,20 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+              <report>dependencies</report>
+              <report>dependency-info</report>
+              <report>dependency-convergence</report>
+              <report>license</report>
+              <report>summary</report>
+              <report>project-team</report>
+              <report>cim</report>
+            </reports>
+          </reportSet>
+        </reportSets>
       </plugin>
     </plugins>
   </reporting>
