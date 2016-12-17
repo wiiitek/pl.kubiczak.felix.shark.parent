@@ -16,30 +16,54 @@ Maven artifacts at [http://maven.kubiczak.pl/pl/kubiczak/felix/shark/][custom-ma
 Release instructions
 --------------------
 
+### Parent module
+
 Submodules of this project are versioned in separate GIT repositories.
 They are released independently.
-Therefore during release we need to use `-N` (non-recursive) flag.
+
+```
+mvn release:prepare -B -N -Darguments="-N" -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
+mvn release:perform -B -N -Darguments="-N -Dgpg.keyname=4A5EB449" -Psign,release 
+```
+
+### Submodules
+
+```
+mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT 
+mvn release:perform -Darguments="-Dgpg.keyname=4A5EB449" -Psign,release
+```
+
+### Details
+
+#### -N and -Darguments
+
+Parent module and submodules are released independently.
+Therefore during parent module release we need to use `-N` (non-recursive) flag.
+This will run Maven Release Plugin for parent module only.
+We don't want to run release plugin for all submodules at this time.
+
 But as described in [Maven Release Plugin FAQ][maven-release-plugin-faq]
 for release plugin we need to use:
 
     mvn -N -Darguments=-N
 
-Please remember about using release profile:
+#### Release profile
+
+Release profile adds javadoc and sources artifacts:
 
     -Prelease
 
-If you want to sign released artifacts use `sign` profile and provide gpg key id:
+#### Sign profile
+
+`sign` profile requires [gpg2][gpg2] installed and gpg key id:
 
     -Psign -Dgpg.keyname=9A105524
 
-In order to perform [non-interactive][maven-release-plugin-non-interative] release use:
+#### Non-interactive release
+
+In order to perform [non-interactive][maven-release-plugin-non-interative] release we use:
 
     -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
-
-To sum it up, release may be performed with following commands:
-
-    mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT 
-    mvn release:perform -Darguments="-Dgpg.keyname=9A105524" -Psign,release
 
 License
 -------
@@ -61,3 +85,4 @@ Plugins versions are reported with every build in:
 [custom-maven-repo]: http://maven.kubiczak.pl/pl/kubiczak/felix/shark/
 [maven-release-plugin-faq]: http://maven.apache.org/maven-release/maven-release-plugin/faq.html#nonrecursive
 [maven-release-plugin-non-interative]: http://maven.apache.org/maven-release/maven-release-plugin/examples/non-interactive-release.html
+[gpg2]: https://www.gnupg.org/
