@@ -8,10 +8,7 @@
   <packaging>pom</packaging>
 
   <name>Shark: Parent</name>
-  <description>
-    Parent maven module for all other Shark artifacts.
-    Contains plugins configuration and default executions.
-  </description>
+  <description>Parent maven module for all other Shark artifacts. Contains plugins configuration and default executions.</description>
   <url>https://shark.kubiczak.pl</url>
 
   <licenses>
@@ -332,7 +329,7 @@
             <id>sort-pom</id>
             <phase>validate</phase>
             <goals>
-              <goal>verify</goal>
+              <goal>sort</goal>
             </goals>
             <configuration>
               <keepBlankLines>true</keepBlankLines>
