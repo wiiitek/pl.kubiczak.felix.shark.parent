@@ -119,7 +119,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.6.1</version>
           <!-- this configuration is for default execution -->
           <configuration>
             <source>1.7</source>
@@ -174,7 +174,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.0.2</version>
           <configuration>
             <encoding>UTF-8</encoding>
           </configuration>
