@@ -87,6 +87,14 @@
       <id>maven.kubiczak.pl</id>
       <url>http://maven.kubiczak.pl</url>
     </repository>
+    <!-- added for new version of gemini blueprint -->
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>atlassian-3rd-party</id>
+      <url>https://maven.atlassian.com/3rdparty/</url>
+    </repository>
   </repositories>
 
   <build>
