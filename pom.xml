@@ -434,7 +434,6 @@
               <report>dependency-convergence</report>
               <report>license</report>
               <report>summary</report>
-              <report>project-team</report>
             </reports>
           </reportSet>
         </reportSets>
