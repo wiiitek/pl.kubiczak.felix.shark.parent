@@ -48,15 +48,15 @@
   <distributionManagement>
     <repository>
       <id>ftps.maven.kubiczak.pl</id>
-      <url>ftps://maven.kubiczak.pl</url>
+      <url>ftps://maven.kubiczak.pl/</url>
     </repository>
     <snapshotRepository>
       <id>ftps.staging.shark.kubiczak.pl</id>
-      <url>ftps://staging.shark.kubiczak.pl</url>
+      <url>ftps://staging.shark.kubiczak.pl/</url>
     </snapshotRepository>
     <site>
       <id>ftps.shark.kubiczak.pl</id>
-      <url>ftps://shark.kubiczak.pl</url>
+      <url>ftps://shark.kubiczak.pl/</url>
     </site>
     <downloadUrl>http://maven.kubiczak.pl/pl/kubiczak/felix/shark/${project.artifactId}</downloadUrl>
   </distributionManagement>
@@ -162,7 +162,7 @@
           <!-- this configuration is for executions performed from command line (on demand) -->
           <configuration>
             <stagingRepositoryId>ftps.staging.shark.kubiczak.pl</stagingRepositoryId>
-            <stagingSiteURL>ftps://staging.shark.kubiczak.pl</stagingSiteURL>
+            <stagingSiteURL>ftps://staging.shark.kubiczak.pl/</stagingSiteURL>
           </configuration>
         </plugin>
         <plugin>
