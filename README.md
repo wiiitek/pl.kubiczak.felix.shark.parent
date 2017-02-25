@@ -76,7 +76,7 @@ License
 Plugins versions
 ---------------------
 
-Plugins versions are reported with every build in:
+Available Maven plugins upgrades are reported in:
 
 * `src/main/resources/plugins-report.txt`
 
