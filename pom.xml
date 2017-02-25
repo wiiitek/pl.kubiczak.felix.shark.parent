@@ -48,16 +48,16 @@
 
   <distributionManagement>
     <repository>
-      <id>ftp.maven.kubiczak.pl</id>
-      <url>ftp://maven.kubiczak.pl</url>
+      <id>ftps.maven.kubiczak.pl</id>
+      <url>ftps://maven.kubiczak.pl</url>
     </repository>
     <snapshotRepository>
-      <id>ftp.staging.shark.kubiczak.pl</id>
-      <url>ftp://staging.shark.kubiczak.pl</url>
+      <id>ftps.staging.shark.kubiczak.pl</id>
+      <url>ftps://staging.shark.kubiczak.pl</url>
     </snapshotRepository>
     <site>
-      <id>ftp.shark.kubiczak.pl</id>
-      <url>ftp://shark.kubiczak.pl</url>
+      <id>ftps.shark.kubiczak.pl</id>
+      <url>ftps://shark.kubiczak.pl</url>
     </site>
     <downloadUrl>http://maven.kubiczak.pl/pl/kubiczak/felix/shark/${project.artifactId}</downloadUrl>
   </distributionManagement>
@@ -103,7 +103,7 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-ftp</artifactId>
-        <version>2.10</version>
+        <version>2.12</version>
       </extension>
     </extensions>
     <finalName>${project.groupId}-${project.artifactId}-${project.version}</finalName>
@@ -162,8 +162,8 @@
           <version>3.6</version>
           <!-- this configuration is for executions performed from command line (on demand) -->
           <configuration>
-            <stagingRepositoryId>ftp.staging.shark.kubiczak.pl</stagingRepositoryId>
-            <stagingSiteURL>ftp://staging.shark.kubiczak.pl</stagingSiteURL>
+            <stagingRepositoryId>ftps.staging.shark.kubiczak.pl</stagingRepositoryId>
+            <stagingSiteURL>ftps://staging.shark.kubiczak.pl</stagingSiteURL>
           </configuration>
         </plugin>
         <plugin>
