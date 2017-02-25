@@ -16,17 +16,19 @@ Maven artifacts at [http://maven.kubiczak.pl/pl/kubiczak/felix/shark/][custom-ma
 Release instructions
 --------------------
 
-### Parent module
 
-Submodules of this project are versioned in separate GIT repositories.
-They are released independently.
+### Parent module
 
 ```
 mvn release:prepare -B -N -Darguments="-N" -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
 mvn release:perform -B -N -Darguments="-N -Dgpg.keyname=4A5EB449" -Psign,release 
 ```
 
+
 ### Submodules
+
+Submodules of this project are versioned in separate GIT repositories.
+They are released independently.
 
 ```
 mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT 
