@@ -267,6 +267,13 @@
           <artifactId>maven-dependency-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+        <!-- 'old-way' for OSGi services -->
+        <plugin>
+          <groupId>org.apache.felix</groupId>
+          <artifactId>maven-scr-plugin</artifactId>
+          <version>1.24.0</version>
+        </plugin>
+
 
         <!-- unit tests -->
         <!--
