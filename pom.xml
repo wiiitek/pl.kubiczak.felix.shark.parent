@@ -287,8 +287,11 @@
           <executions>
             <execution>
               <goals>
-                <goal>compile</goal>
-                <goal>testCompile</goal>
+                <!--
+                  this goal requires groovy dependency with compile scope
+                -->
+                <!--<goal>compile</goal>-->
+                <goal>compileTests</goal>
               </goals>
             </execution>
           </executions>
