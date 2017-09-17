@@ -226,7 +226,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>1.4.1</version>
+          <version>3.0.0-M1</version>
           <dependencies>
             <dependency>
               <groupId>org.codehaus.mojo</groupId>
@@ -273,7 +273,6 @@
           <artifactId>maven-scr-plugin</artifactId>
           <version>1.24.0</version>
         </plugin>
-
 
         <!-- unit tests -->
         <!--
