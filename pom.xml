@@ -331,6 +331,7 @@
             <configuration>
               <logOutput>false</logOutput>
               <outputFile>${project.basedir}/src/main/resources/plugins-report.txt</outputFile>
+              <rulesUri>file:///${basedir}/src/main/resources/rule-set.xml</rulesUri>
             </configuration>
           </execution>
         </executions>
