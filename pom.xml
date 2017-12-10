@@ -75,7 +75,7 @@
     <felix.mirror>https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.main.distribution</felix.mirror>
 
     <version.required.maven>3.0.5</version.required.maven>
-    <version.felix>5.6.4</version.felix>
+    <version.felix>5.6.10</version.felix>
   </properties>
 
   <repositories>
