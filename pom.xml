@@ -158,7 +158,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
-          <version>3.6</version>
+          <version>3.7</version>
           <!-- this configuration is for executions performed from command line (on demand) -->
           <configuration>
             <stagingRepositoryId>ftps.staging.shark.kubiczak.pl</stagingRepositoryId>
@@ -248,7 +248,7 @@
             <dependency>
               <groupId>com.puppycrawl.tools</groupId>
               <artifactId>checkstyle</artifactId>
-              <version>8.5</version>
+              <version>8.7</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -257,7 +257,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.4.0</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
