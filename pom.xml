@@ -69,7 +69,7 @@
       this property should be overwritten from commandline
       (see "Release instructions" in README file)
     -->
-    <gpg.keyname>9A105524</gpg.keyname>
+    <gpg.keyname>01D2F996</gpg.keyname>
 
     <felix.dir>felix-framework</felix.dir>
     <felix.mirror>https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.main.distribution</felix.mirror>
@@ -320,7 +320,7 @@
               and http://maven.apache.org/maven-release/maven-release-plugin/prepare-mojo.html#arguments
             -->
             <keyname>${gpg.keyname}</keyname>
-            <executable>gpg2</executable>
+            <executable>gpg</executable>
           </configuration>
         </plugin>
       </plugins>

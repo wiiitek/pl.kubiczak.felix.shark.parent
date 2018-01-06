@@ -21,7 +21,7 @@ Release instructions
 
 ```
 mvn release:prepare -B -N -Darguments="-N" -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
-mvn release:perform -B -N -Darguments="-N -Dgpg.keyname=4A5EB449" -Psign,release 
+mvn release:perform -B -N -Darguments="-N -Dgpg.keyname=01D2F996" -Psign,release 
 ```
 
 
@@ -32,7 +32,7 @@ They are released independently.
 
 ```
 mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT 
-mvn release:perform -Darguments="-Dgpg.keyname=4A5EB449" -Psign,release
+mvn release:perform -Darguments="-Dgpg.keyname=01D2F996" -Psign,release
 ```
 
 ### Details
