@@ -29,6 +29,16 @@
                 #breadcrumbs ul.breadcrumb {
                     padding-left: 100px;
                 }
+                a.builtBy {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                a.builtBy img.builtBy {
+                    margin-top: 0;
+                }
+                .source pre.prettyprint {
+                    padding: 10px;
+                }
             </style>]]>
     </head>
     <menu name="Shark Modules" inherit="top">
