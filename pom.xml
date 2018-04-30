@@ -83,13 +83,6 @@
     <version.spring.security>4.2.4.RELEASE_1</version.spring.security>
     <version.gemini.blueprint>2.1.0.RELEASE</version.gemini.blueprint>
 
-    <!--
-      some errors with Jersey version 2.26-b04
-      see https://github.com/jersey/jersey/issues/3588
-    -->
-    <version.jersey>2.26</version.jersey>
-    <version.glassfish.hk2>2.5.0-b54</version.glassfish.hk2>
-
     <version.slf4j>1.7.25</version.slf4j>
     <version.logback>1.2.3</version.logback>
 
