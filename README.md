@@ -32,7 +32,7 @@ They are released independently.
 
 ```
 mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT 
-mvn release:perform -Darguments="-Dgpg.keyname=01D2F996" -Psign,release
+mvn release:perform -B -Darguments="-Dgpg.keyname=01D2F996" -Psign,release
 ```
 
 ### Details
