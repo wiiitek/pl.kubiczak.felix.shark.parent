@@ -34,7 +34,6 @@
   <modules>
     <module>dependencies</module>
     <module>felix</module>
-    <module>logging</module>
     <module>samples</module>
   </modules>
 
