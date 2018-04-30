@@ -8,5 +8,19 @@
         <ignoreVersion>3.0-r1585899</ignoreVersion>
       </ignoreVersions>
     </rule>
+    <rule groupId="commons-collections" artifactId="commons-collections">
+      <!-- some old versions in non-maven format -->
+      <ignoreVersions>
+        <ignoreVersion>20040616</ignoreVersion>
+        <ignoreVersion>20040102.233541</ignoreVersion>
+        <ignoreVersion>20031027.000000</ignoreVersion>
+        <ignoreVersion>20030418.083655</ignoreVersion>
+      </ignoreVersions>
+    </rule>
+    <rule groupId="com.google.guava" artifactId="guava">
+      <ignoreVersions>
+        <ignoreVersion type="regex">.*-android</ignoreVersion>
+      </ignoreVersions>
+    </rule>
   </rules>
 </ruleset>
