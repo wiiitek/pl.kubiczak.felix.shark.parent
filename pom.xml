@@ -75,7 +75,10 @@
     <version.required.maven>3.0.5</version.required.maven>
     <version.felix>5.6.10</version.felix>
 
-    <!-- Gemini Blueprint 2.1.0.RELEASE imports spring version [4.2.0,4.3)  -->
+    <!--
+      Gemini Blueprint 3.0.0.M01 is ready for Spring 5,
+      but we wait for ServiceMix Spring Security ver. 5
+    -->
     <version.spring>4.3.10.RELEASE_1</version.spring>
     <version.spring.security>4.2.4.RELEASE_1</version.spring.security>
     <version.gemini.blueprint>2.1.0.RELEASE</version.gemini.blueprint>
