@@ -855,9 +855,6 @@
           </execution>
           <execution>
             <id>check-dependencies</id>
-            <!--
-              here it will probably report only plugin dependencies
-            -->
             <phase>validate</phase>
             <goals>
               <goal>display-dependency-updates</goal>
