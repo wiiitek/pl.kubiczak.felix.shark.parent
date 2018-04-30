@@ -20,7 +20,7 @@ Release instructions
 ### Parent module
 
 ```
-mvn release:prepare -B -N -Darguments="-N" -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
+mvn release:prepare -B -N -Darguments="-N" -DreleaseVersion=2.1 -DdevelopmentVersion=2.2-SNAPSHOT
 mvn release:perform -B -N -Darguments="-N -Dgpg.keyname=01D2F996" -Psign,release 
 ```
 
