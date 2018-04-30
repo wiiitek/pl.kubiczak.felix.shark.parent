@@ -43,9 +43,7 @@
     </head>
     <menu name="Shark Modules" inherit="top">
       <item name="Shark: Parent" href="./"/>
-      <item name="Shark: Dependencies" href="../dependencies/"/>
       <item name="Shark: Felix" href="../felix/"/>
-      <item name="Shark: Logging" href="../logging/"/>
       <item name="Shark: Samples" href="../samples/"/>
     </menu>
     <menu ref="reports" inherit="top"/>
