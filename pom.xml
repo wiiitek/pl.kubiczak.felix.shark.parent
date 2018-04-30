@@ -972,7 +972,6 @@
               <report>index</report>
               <report>dependencies</report>
               <report>dependency-info</report>
-              <report>dependency-convergence</report>
               <report>license</report>
               <report>summary</report>
             </reports>
