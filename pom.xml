@@ -239,6 +239,10 @@
       </dependency>
 
       <!-- Spring -->
+      <!--
+        Compare also with Karaf spring features:
+        https://github.com/apache/karaf/blob/master/assemblies/features/spring/src/main/feature/feature.xml
+      -->
       <dependency>
         <groupId>org.apache.servicemix.bundles</groupId>
         <artifactId>org.apache.servicemix.bundles.spring-aop</artifactId>
@@ -272,7 +276,7 @@
       <dependency>
         <groupId>org.apache.servicemix.bundles</groupId>
         <artifactId>org.apache.servicemix.bundles.spring-web</artifactId>
-        <version>4.3.10.RELEASE_2</version>
+        <version>${version.spring}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
