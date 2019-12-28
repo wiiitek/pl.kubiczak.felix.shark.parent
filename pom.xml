@@ -596,6 +596,16 @@
     </dependencies>
   </dependencyManagement>
 
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>maven.kubiczak.pl</id>
+      <url>http://maven.kubiczak.pl</url>
+    </repository>
+  </repositories>
+
   <build>
 
     <extensions>
