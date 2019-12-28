@@ -3,7 +3,8 @@
 ## 2.2
 
 * Removing not needed attlasian Maven repository
-* Dependencies updates
+* Dependencies and plugins upgrade
+* guava removed from dependencies
 
 ## 2.1
 
