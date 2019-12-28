@@ -969,7 +969,7 @@
               <report>index</report>
               <report>dependencies</report>
               <report>dependency-info</report>
-              <report>license</report>
+              <report>licenses</report>
               <report>summary</report>
             </reports>
           </reportSet>

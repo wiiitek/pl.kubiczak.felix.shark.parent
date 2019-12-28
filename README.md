@@ -35,6 +35,29 @@ mvn release:prepare -B -DreleaseVersion=1.2 -DdevelopmentVersion=1.3-SNAPSHOT
 mvn release:perform -B -Darguments="-Dgpg.keyname=01D2F996" -Psign,release
 ```
 
+### Site
+
+After all modules are released, please checkout to the release versions commits and execute:
+
+```
+mvn site:site site:deploy
+```
+
+This command will try to find credentials for site deployment in Maven config files i.e.:
+
+```xml
+<servers>
+  <server>
+    <id>ftps.server.example.com</id>
+    <username>ftp-user-name</username>
+    <password>1234567890abcdefghijklmnopqr</password>
+    <configuration>
+      <endpointChecking>false</endpointChecking>
+    </configuration>
+  </server>
+</servers>
+```
+
 ### Details
 
 #### -N and -Darguments
