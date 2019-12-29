@@ -1,10 +1,5 @@
 
-The following plugin updates are available:
-  maven-deploy-plugin ............................. 2.8.2 -> 3.0.0-M1
-  maven-enforcer-plugin ........................ 3.0.0-M1 -> 3.0.0-M3
-  maven-install-plugin ............................ 2.5.2 -> 3.0.0-M1
-  maven-release-plugin ............................ 2.5.3 -> 3.0.0-M1
-  maven-surefire-plugin .......................... 2.21.0 -> 3.0.0-M4
+All plugins with a version specified are using the latest versions.
 
 All plugins have a version specified.
 
