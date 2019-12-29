@@ -72,7 +72,7 @@
     <felix.dir>felix-framework</felix.dir>
     <felix.mirror>https://repo1.maven.org/maven2/org/apache/felix/org.apache.felix.main.distribution</felix.mirror>
 
-    <version.required.maven>3.0.5</version.required.maven>
+    <version.required.maven>3.5.0</version.required.maven>
     <!--
       please remember also about updating condition in
       download-felix-framework profile
@@ -631,8 +631,8 @@
           <version>3.8.1</version>
           <!-- this configuration is for default execution -->
           <configuration>
-            <source>1.7</source>
-            <target>1.7</target>
+            <source>1.8</source>
+            <target>1.8</target>
           </configuration>
         </plugin>
         <plugin>
@@ -767,7 +767,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>4.2.1</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -788,7 +788,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-scr-plugin</artifactId>
-          <version>1.26.0</version>
+          <version>1.26.4</version>
         </plugin>
 
         <!-- unit tests -->

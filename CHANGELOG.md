@@ -2,7 +2,8 @@
 
 ## 2.2
 
-* Removing not needed attlasian Maven repository
+* upgrade to JAVA 8 and Maven 3.5.0
+* Removing not needed atlassian Maven repository
 * Dependencies and plugins upgrade
 * guava removed from dependencies
 

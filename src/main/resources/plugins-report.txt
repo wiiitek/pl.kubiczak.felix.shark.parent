@@ -1,6 +1,5 @@
 
 The following plugin updates are available:
-  org.apache.felix:maven-bundle-plugin ............... 3.5.0 -> 4.0.0
   maven-deploy-plugin ............................. 2.8.2 -> 3.0.0-M1
   maven-enforcer-plugin ........................ 3.0.0-M1 -> 3.0.0-M3
   maven-install-plugin ............................ 2.5.2 -> 3.0.0-M1
@@ -9,12 +8,8 @@ The following plugin updates are available:
 
 All plugins have a version specified.
 
-Project defines minimum Maven version as: 3.0.5
-Plugins require minimum Maven version of: 3.0.5
+Project defines minimum Maven version as: 3.5.0
+Plugins require minimum Maven version of: 3.5.0
 
 No plugins require a newer version of Maven than specified by the pom.
-
-Require Maven 3.5.0 to use the following plugin updates:
-  org.apache.felix:maven-bundle-plugin ............... 3.5.0 -> 4.2.1
-  org.apache.felix:maven-scr-plugin ................ 1.26.0 -> 1.26.4
 
